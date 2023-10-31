@@ -1,0 +1,111 @@
+.loginpop{
+    position: fixed;
+    /* z-index:1000000; */
+    z-index:99999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    /* position: relative; */
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/dace47b4-a5cb-4368-80fe-c26f3e77d540/f5b52435-458f-498f-9d1d-ccd4f1af9913/IN-en-20231023-popsignuptwoweeks-perspective_alpha_website_large.jpg") center no-repeat;
+    background-size: cover;
+
+}
+.loginScreen_gradient{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0)60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+.loginpopdiv{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background-color: #000000f2;
+    border-radius: 10px;
+    border: 1px solid white;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+}
+.cancelicon{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    left: 90%;
+    padding: 5px;
+    cursor: pointer;
+}
+.h1text{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+.h1text span{
+    color: red;
+}
+.logicon{
+    display: flex;
+    justify-content: center;
+}
+.ggicon{
+    padding: 5px;
+    margin: 10px;
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.h2text{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.input{
+    margin: 0 10% 10% 10%; 
+    width: 80%!important;
+    color: white;
+}
+label{
+    color: white;
+    margin: 10%;
+    font-size: 18px;
+}
+.subbut{
+    text-align: center;
+}
+.subbut button{
+    width: 130px;
+}
+.createacc{
+    color: #006eff;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+@media screen and (min-width:0px) and (max-width:650px) {
+    .loginpop{
+        top: 0;
+    }
+}
+@media screen and (min-width:0px) and (max-width:400px) {
+    .input{
+        margin: 0 3% 10% 3%;
+        width: 94%!important;
+    }
+    label{
+        margin: 3%;
+    }
+    .h1text{
+        font-size: 20px;
+    }
+}
